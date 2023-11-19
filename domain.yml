@@ -1,0 +1,43 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - courses_available
+  - inquire_about_course
+  - inquire_about_fees
+  - inquire_about_admission_requirements
+  - inquire_about_scholarships
+
+entities:
+  - course
+
+# slots:
+#   course:
+#     type: text
+#     mappings:
+#       - type: from_entity
+#         entity: course
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_courses_available:
+  - text: "Which course would you like to know about? [BCS, BBA, BIHM]"
+
+  # utter_ask_course_info:
+  # - text: "Which course would you like to know about? [BCS, BBA, BIHM]"
+
+actions:
+  - action_provide_course_info
+  # - action_provide_fees_info
+  # - action_provide_admission_info
+  # - action_provide_scholarship_info
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

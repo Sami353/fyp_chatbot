@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Respond to course inquiry
+  steps:
+    - intent: inquire_about_course
+    - action: action_provide_course_info
+
+- rule: Respond to fees inquiry
+  steps:
+    - intent: inquire_about_fees
+    - action: action_provide_fees_info
+
+- rule: Respond to admission requirements inquiry
+  steps:
+    - intent: inquire_about_admission_requirements
+    - action: action_provide_admission_info
+
+- rule: Respond to scholarships inquiry
+  steps:
+    - intent: inquire_about_scholarships
+    - action: action_provide_scholarship_info

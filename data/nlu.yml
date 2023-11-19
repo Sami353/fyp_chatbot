@@ -1,0 +1,74 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - good afternoon
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - goodafternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: courses_available
+  examples: |
+    - What are the courses available?
+    - What courses are available?
+
+- intent: inquire_about_course
+  examples: |
+    - Tell me about the [BCS](course) course.
+    - I want to know more about [BBA](course).
+    - What can you tell me about [BIHM](course)?
+    - Details about [BBA](course).
+    - Information on [BCS](course).
+
+- intent: inquire_about_fees
+  examples: |
+    - What are the fees for [BCS](course)?
+    - How much does [BBA](course) cost?
+    - Tell me the fee structure of [BIHM](course).
+    - What is the total fee for [BBA](course)?
+    - Break down the costs for [BCS](course).
+
+- intent: inquire_about_admission_requirements
+  examples: |
+    - What are the admission requirements for [BCS](course)?
+    - How can I get admitted to [BBA](course)?
+    - What do I need to apply for [BIHM](course)?
+    - Admission criteria for [BBA](course).
+    - Eligibility for [BCS](course).
+
+- intent: inquire_about_scholarships
+  examples: |
+    - Are there scholarships for [BCS](course)?
+    - Can I get a scholarship for [BBA](course)?
+    - What scholarships are available for [BIHM](course)?
+    - Tell me about financial aid for [BBA](course).
+    - Does [BCS](course) offer any scholarships?
+
+lookup: course
+  examples: |
+    - BCS
+    - BBA
+    - BIHM

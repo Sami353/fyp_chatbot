@@ -1,0 +1,37 @@
+version: "3.1"
+
+stories:
+- story: Greet
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: Say goodbye to the user
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Course available
+  steps:
+    - intent: courses_available
+    - action: utter_courses_available
+
+- story: Inquire about a course
+  steps:
+    - intent: inquire_about_course
+    - action: action_provide_course_info
+
+- story: Inquire about course fees
+  steps:
+    - intent: inquire_about_fees
+    - action: action_provide_fees_info
+
+- story: Inquire about admission requirements
+  steps:
+    - intent: inquire_about_admission_requirements
+    - action: action_provide_admission_info
+
+- story: Inquire about scholarships
+  steps:
+    - intent: inquire_about_scholarships
+    - action: action_provide_scholarship_info
